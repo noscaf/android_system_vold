@@ -58,6 +58,7 @@ common_shared_libraries := \
 	libsoftkeymaster \
 	libbase \
 	libkeymaster_messages \
+	libext2_blkid
 
 common_static_libraries := \
 	libbootloader_message \
@@ -68,6 +69,8 @@ common_static_libraries := \
 	libscrypt_static \
 	libmincrypt \
 	libbatteryservice \
+	libext2_blkid \
+	libext2_uuid_static
 
 vold_conlyflags := -std=c11
 vold_cflags := -Werror -Wall -Wno-missing-field-initializers -Wno-unused-variable -Wno-unused-parameter
